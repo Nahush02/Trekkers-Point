@@ -1,27 +1,32 @@
 .sliderContainer {
-  background: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
 
   width: 100%;
   height: 100vh;
+
+  background: black;
+
+  justify-content: center;
+  align-items: center;
 }
 .slider {
+  overflow: hidden;
+
   width: 100%;
   height: 80vh;
+
   background-color: black;
-  overflow: hidden;
 }
 
 .slider figure {
   position: relative;
-  width: 300%;
-  height: 100%;
+  left: 0;
+
   display: flex;
   overflow: hidden;
 
-  left: 0;
+  width: 300%;
+  height: 100%;
 
   animation-name: sliderAnimation;
   animation-duration: 10s;
@@ -29,10 +34,11 @@
 }
 
 .slider figure div {
+  display: flex;
+
   width: 100%;
   height: 100%;
 
-  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -43,10 +49,10 @@
 
 @keyframes sliderAnimation {
   0% {
-    left: 0%;
+    left: 0;
   }
   30% {
-    left: 0%;
+    left: 0;
   }
   35% {
     left: -100%;
@@ -61,28 +67,33 @@
     left: -200%;
   }
   100% {
-    left: 0%;
+    left: 0;
   }
 }
 
 .about {
   width: 100%;
   height: 100vh;
-  background-color: black;
+
   color: white;
+  background-color: black;
 }
 
-.about-heading{
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  font-size: 50px;
+.about-heading {
   font-family: emoji;
+  font-size: 50px;
+
+  width: 100%;
+  padding: 20px;
+
+  text-align: center;
 }
 
 .about-paragraph {
   font-size: 18px;
+
   padding: 10px 0;
+
   text-align: center;
 }
 
@@ -93,44 +104,90 @@
   padding: 0 80px;
 }
 
-.trekking-info{
+.trekking-info {
+  display: flex;
+
   width: 100%;
   height: 100vh;
-  display: flex;
-  
 }
 
-.info-content{
+.info-content {
   margin-right: 80px;
 }
 
 .info-content h3 {
-  margin: 30px 0 0px 0;
   font-size: 24px;
+
+  margin: 30px 0 0 0;
 }
 
 .info-content-paragraph {
   font-size: 18px;
-    padding: 10px 0;
+
+  padding: 10px 0;
 }
 
-.info-heading{
-  width: 100%;
-  text-align: center;
-  padding: 20px;
-  font-size: 50px;
+.info-heading {
   font-family: emoji;
+  font-size: 50px;
+
+  width: 100%;
+  padding: 20px;
+
+  text-align: center;
 }
 
 .info-image {
-  height: 100%;
   display: flex;
+
+  height: 100%;
+
   justify-content: center;
   align-items: center;
 }
 
-.info-image img{
+.info-image img {
   height: 80%;
+}
+
+.centerdiv {
+  display: flex;
+
+  height: 10vh;
+  margin: 10px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.social-link {
+  line-height: 90px;
+
+  width: 70px;
+  height: 70px;
+  margin: 30px;
+
+  text-align: center;
+
+  border-radius: 100px;
+  background-color: #f5f6fa;
+  box-shadow: 1px 4px 2px 2px #dcdde1;
+}
+
+.social-link i {
+  transition: all 0.3s linear;
+}
+
+.social-link:hover i {
+  transform: scale(1.4);
+}
+
+.fa-instagram {
+  color: #e84393;
+}
+
+.fa-youtube {
+  color: #e84118;
 }
 
 @media (max-width: 720px) {
@@ -139,44 +196,3 @@
     height: auto;
   }
 }
-
-.centerdiv {
-  margin: 0;
-  padding: 0;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-a {
-
-    height: 70px;
-    width: 70px;
-    background-color: #f5f6fa;
-    border-radius: 100px;
-    text-align: center;
-    margin: 30px;
-    line-height: 90px;
-    box-shadow: 1px 4px 2px 2px #dcdde1;
-  
-}
-
-a i {
-  transition: all 0.3s linear;
-  
-}
-
-a:hover i{
-  transform: scale(1.4);
-}
-
-.fa-instagram{
-  color: #e84393
-}
-
-.fa-youtube{
-  color: #e84118;
-}
-
