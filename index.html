@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TREKKERS POINT </title>
-    <link rel="stylesheet" href="./static/css/style.css">
-    <link rel="stylesheet" href="./static/css/Common.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-   <div class="nav">
-        <a href="#">Home</a>
-        <a href="Gallery.html">Gallery</a>
-        <a href="#about">About</a>
-        <a href="Places.html">Places</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TREKKERS POINT</title>
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <link rel="stylesheet" href="./static/css/Common.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="Gallery.html">Gallery</a>
+      <a href="#about">About</a>
+      <a href="Places.html">Places</a>
 
-        <div class="search" id="search">
-            <div class="open" onClick="showSearchResults();"></div>
-            <form>
-                
-                <input type="text" placeholder="Search......">
-                <button>Go</button>
-            </form>
-                
-        </div>        
+      <div class="search" id="search">
+        <div class="open" onClick="showSearchResults();"></div>
+        <form>
+          <input type="text" placeholder="Search......" />
+          <button>Go</button>
+        </form>
+      </div>
     </div>
 
     <div class="sliderContainer">
-        <div class="slider" id="slider">
-            <figure>
-                <div class="imgContainer"><img src="./static/images/Image1.jpg" alt="Image1"></div>
-                <div class="imgContainer"><img src="./static/images/TREKKING-QUOTES.jpg" alt="TREKKING-QUOTES"></div>
-                <div class="imgContainer"><img src="./static/images/Quote2.jpg" alt="Quote2"></div>               
-            </figure>
+      <div class="slider" id="slider">
+        <figure>
+          <div class="imgContainer">
+            <img src="./static/images/Image1.jpg" alt="Image1" />
+          </div>
+          <div class="imgContainer">
+            <img
+              src="./static/images/TREKKING-QUOTES.jpg"
+              alt="TREKKING-QUOTES"
+            />
+          </div>
+          <div class="imgContainer">
+            <img src="./static/images/Quote2.jpg" alt="Quote2" />
+          </div>
+        </figure>
+      </div>
+    </div>
+
+    <div class="trekking-info-container">
+      <h2 class="info-heading">Trekking</h2>
+
+      <div class="trekking-info">
+        <div class="info-content">
+          <p class="info-content-paragraph">
+            One of the major benefits of trekking is that it improves your
+            physical health immensely. Spending multiple hours on the trail,
+            climbing around boulders, rock hopping and ascending hills gives
+            your whole body a workout, improving your strength, agility and
+            cardio fitness. It’s also a fantastic way to lose weight, in that if
+            you carry a full pack, you can burn around 600 calories per hour
+            while trekking
+          </p>
         </div>
+        <div class="info-image">
+          <img src="./static/images/Trek.jpg" alt="" />
+        </div>
+      </div>
     </div>
     
-
-   <div class="about" id="about"></div>
-
-  
-</body>
+    <div class="about" id="about"></div>
+  </body>
 </html>
